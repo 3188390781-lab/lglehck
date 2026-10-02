@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B站视频播放器</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .video-wrapper {
+            width: 90%;
+            max-width: 800px;
+            background: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-wrapper">
+        <iframe
+            src="https://player.bilibili.com/player.html?bvid=BV1CbaW6pEPA&autoplay=0&danmaku=1&high_quality=1&no_related=1"
+            allowfullscreen="true"
+            scrolling="no"
+            frameborder="no">
+        </iframe>
+    </div>
+</body>
+</html>
